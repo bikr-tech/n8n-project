@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: n8n-nodejs
+    runtime: node # Add this line
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: DB_POSTGRESDB_HOST
+      - key: DB_POSTGRESDB_PORT
+        value: DB_POSTGRESDB_PORT
+      - key: DB_POSTGRESDB_DATABASE
+        value: DB_POSTGRESDB_DATABASE
+      - key: DB_POSTGRESDB_USER
+        value: DB_POSTGRESDB_USER
+      - key: DB_POSTGRESDB_PASSWORD
+        value: DB_POSTGRESDB_PASSWORD
+      - key: DB_POSTGRESDB_SCHEMA
+        value: public
+
+

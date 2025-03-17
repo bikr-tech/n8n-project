@@ -1,0 +1,43 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore environment variables
+.env
+.env.local
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore build and distribution directories
+dist/
+build/
+out/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore package-lock.json (if using Yarn)
+package-lock.json
+
+# Ignore Yarn files
+yarn.lock
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Ignore n8n-specific files
+.n8n/
